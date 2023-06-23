@@ -1,0 +1,77 @@
+{
+  "_from": "@goodboydigital/gb-model-tools@^4.0.1",
+  "_id": "@goodboydigital/gb-model-tools@4.3.0",
+  "_inBundle": false,
+  "_integrity": "sha512-pPd6xReTVhozCVe9vyqPPpo4GBvRZioxO00L/wfcEWn3wLboGXGE/pn/x42HfPWueMGGyAWIc3phdx/gLM7WoQ==",
+  "_location": "/@goodboydigital/gb-model-tools",
+  "_phantomChildren": {
+    "graceful-fs": "4.2.11",
+    "jsonfile": "4.0.0",
+    "universalify": "0.1.2"
+  },
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@goodboydigital/gb-model-tools@^4.0.1",
+    "name": "@goodboydigital/gb-model-tools",
+    "escapedName": "@goodboydigital%2fgb-model-tools",
+    "scope": "@goodboydigital",
+    "rawSpec": "^4.0.1",
+    "saveSpec": null,
+    "fetchSpec": "^4.0.1"
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "/@goodboydigital/astro",
+    "/@goodboydigital/bulldog",
+    "/@goodboydigital/odie"
+  ],
+  "_resolved": "https://registry.npmjs.org/@goodboydigital/gb-model-tools/-/gb-model-tools-4.3.0.tgz",
+  "_shasum": "43b00c094fb2e3b79dbeb8b8ccb1f75aa336f177",
+  "_spec": "@goodboydigital/gb-model-tools@^4.0.1",
+  "_where": "/Users/eriksombroek/_projects/poki/html5-subway-surfers-astro/node_modules/@goodboydigital/astro",
+  "author": {
+    "name": "mat groves"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "draco3d": "^1.3.6",
+    "fbx2gltf": "^0.9.7-p1",
+    "fs-extra": "^7.0.1",
+    "gltf-pipeline": "^2.1.10",
+    "pako": "^1.0.11",
+    "path": "^0.12.7",
+    "signals": "^1.0.0"
+  },
+  "deprecated": false,
+  "description": "A collection of GB model tools. gltf => gb and fbx => gb",
+  "devDependencies": {
+    "@types/jest": "^25.2.3",
+    "@typescript-eslint/eslint-plugin": "^2.34.0",
+    "@typescript-eslint/parser": "^2.34.0",
+    "eslint": "^5.16.0",
+    "gltf-typescript-generator": "0.0.3",
+    "jest": "^26.0.1",
+    "ts-jest": "^26.1.1",
+    "typedoc": "^0.14.2",
+    "typescript": "^3.9.5"
+  },
+  "files": [
+    "dist/"
+  ],
+  "keywords": [],
+  "license": "ISC",
+  "main": "./dist/index.js",
+  "name": "@goodboydigital/gb-model-tools",
+  "scripts": {
+    "docs": "npx typedoc --out ./docs/ ./ --ignoreCompilerErrors",
+    "lint": "eslint src --max-warnings 0",
+    "lint-fix": "eslint src --fix",
+    "postversion": "npm run prod && git push --tags",
+    "prod": "rm -rf dist/ && npx tsc",
+    "start": "npx tsc --watch",
+    "test": "npx jest",
+    "watch:lint": "watch \"eslint src || exit 0\" src"
+  },
+  "version": "4.3.0"
+}
