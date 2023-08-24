@@ -22,6 +22,7 @@ function unpackGBObject(buffer) {
         boneIndices: 4,
         uvs: 2,
         tangents: 4,
+        colors: 4,
     };
     (_a = gbObject.geometryBatch) === null || _a === void 0 ? void 0 : _a.forEach((primitive) => {
         if (primitive.indices !== undefined) {

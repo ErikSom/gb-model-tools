@@ -13,6 +13,7 @@ const GLTFtoGBAttributes = {
     WEIGHTS_0: 'weights',
     WEIGHTS: 'weights',
     TANGENT: 'tangents',
+    COLOR_0: 'colors',
 };
 function processPrimitive(gltfRaw, primitiveRaw) {
     const primitive = {
@@ -49,6 +50,9 @@ function processPrimitive(gltfRaw, primitiveRaw) {
             }
             return out;
         });
+    }
+    if (primitive.attributes.colors) {
+        primitive.attributes.colors = getBuffer_1.getBuffer(gltfRaw, primitiveRaw.attributes.colors);
     }
     return primitive;
 }

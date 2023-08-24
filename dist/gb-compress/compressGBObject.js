@@ -64,6 +64,7 @@ function compressGBObject(gbObject) {
         uvs: 2,
         indices: 1,
         tangents: 4,
+        colors: 3,
     };
     const compressMap = {
         positions: true,
@@ -72,6 +73,7 @@ function compressGBObject(gbObject) {
         boneIndices: true,
         uvs: true,
         tangents: true,
+        colors: true,
     };
     function packPrimitive(primitive) {
         for (const i in map) {
