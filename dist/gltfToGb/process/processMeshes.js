@@ -51,9 +51,7 @@ function processPrimitive(gltfRaw, primitiveRaw) {
             return out;
         });
     }
-    if (primitive.attributes.colors) {
-        primitive.attributes.colors = getBuffer_1.getBuffer(gltfRaw, primitiveRaw.attributes.colors);
-    }
+
     return primitive;
 }
 function processMeshes(gltfRaw, gbObject) {
